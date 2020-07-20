@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Route} from "react-router-dom";
-import {connect} from 'react-redux';
+import { Route, Switch } from "react-router-dom";
+import { connect } from 'react-redux';
 
 
 import Cart from "./Cart";
@@ -15,35 +15,35 @@ import './styles/Orderato.scss';
 
 
 class Orderato extends Component {
-    componentDidMount(){
+    componentDidMount() {
         console.log("innovation mounted");
     }
 
-    
+
     render() {
         return (
-          
-               
-                <div className="Orderato" >
 
-                    <Route          path="/"  component={Header1}/>
-                    <Route   exact  path="/"  component={Header2}/>
-                    <Route   exact  path="/"  component={FeedProducts}/>
-                    <Route          path="/product/:id"  component={ProductPage}/>
-                    <Route          path="/Cart"  component={Cart}/>
-                    <Route          path="/"  component={Footer}/>
-                   
 
-                </div>
-                
-        
+            <div className="Orderato" >
+                <Header1 />
+                <Header2 />
+                <Switch>
+                    <Route exact path="/" component={FeedProducts} />
+                    <Route path="/product/:id" component={ProductPage} />
+                    <Route path="/Cart" component={Cart} />
+                </Switch>
+                <Footer />
+
+            </div>
+
+
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    return {gstate : state};
+    return { gstate: state };
 };
 
-       
-export default connect(mapStateToProps) (Orderato);     
+
+export default connect(mapStateToProps)(Orderato);     
