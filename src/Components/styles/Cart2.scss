@@ -1,0 +1,82 @@
+@import "./utilities.scss";
+// $main-color : #1EB7B2;
+// $main-color-light : #39faf0;
+// $main-color-dark : #1f746f;
+
+.Cart2{
+  .products{
+    width: 50%;
+    display: inline-block;
+  }
+   .form{
+       width: 100%;
+       display: inline-block;
+       .cart-form{
+         form{
+            display: flex;
+            flex-direction: column;
+            padding: 0 20%;
+            input{
+                margin: 10px 0;
+                border-radius: 30px;
+                padding: 12px 30px;
+                border: none;
+                background: #eaeaea;
+                font-weight: 600;
+                font-size: 18px;
+                transition: 0.2s all ease-in-out;
+                &:focus{
+                    outline-offset: 0px;
+                    outline: none;
+                    background: #c9c8c8;
+                }
+            }
+            .select-box{
+              span{
+                  top:35%;
+                  right : 3%;
+                  transition: 0.2s all ease-in-out;
+              }
+              .rotate{
+                  
+                  transform: rotate(180deg);
+              }
+              select{
+                  margin: 10px 0;
+                  border-radius: 30px;
+                  padding: 12px 30px;
+                  border: none;
+                  background: #eaeaea;
+                  font-weight: 600;
+                  font-size: 18px;
+                  -webkit-appearance: none;
+                  &:focus{
+                      outline-offset: 0px;
+                      outline: none;
+                      background: #c9c8c8;
+                  }
+              }
+          }
+            button{
+              width: 166px;
+              margin: 30px auto 0;
+              cursor: pointer;
+              color: #005CA9;
+              background-color: #ffffff;
+              border: #005CA9 2px solid;
+              outline: none;
+              padding: 12px;
+              border-radius: 40px;
+              font-size: 20px;
+              transition: 0.2s all ease-in-out;
+              &:hover{
+                  background-color: #005CA9;
+                  color: white;
+              }
+       }
+
+       }
+   }
+
+}
+}

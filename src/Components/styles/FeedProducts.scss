@@ -1,0 +1,97 @@
+@import "./utilities.scss";
+// $main-color : #1EB7B2;
+// $main-color-light : #39faf0;
+// $main-color-dark : #1f746f;
+
+
+@media (max-width: 576px){
+    
+    .feed{
+        .spinner-box{
+            display: inline-block;
+            width: 100%;
+            .spinner{
+                color: $main-color-dark;
+                margin: 10vw auto;
+                display: block;
+            }
+        }
+        
+        .feed-prods{
+            display: inline-block;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            width: 100%;
+        
+            
+        }
+
+    }
+
+}
+
+
+
+
+@media (min-width: 577px) and (max-width: 1366px) {
+    
+    .feed{
+        .spinner-box{
+            display: inline-block;
+            width: 100%;
+            .spinner{
+                color: $main-color-dark;
+                margin: 10vw auto;
+                display: block;
+            }
+        }
+        
+        .feed-prods{
+            display: inline-block;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            width: 100%;
+        
+            
+        }
+
+    }
+
+}
+
+
+@media (min-width: 1367px) {
+    
+
+    .feed{
+        .general-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+
+            .spinner-box{
+                display: inline-block;
+                width: 100%;
+                .spinner{
+                    color: $main-color-dark;
+                    margin: 10vw auto;
+                    display: block;
+                }
+            }
+            
+            .feed-prods{
+                display: inline-block;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                width: 100%;
+                
+            }
+        }
+       
+
+    }
+
+}
+
+

@@ -1,0 +1,36 @@
+@media (max-width: 576px) { 
+    body{
+        .general-container{
+            background-color: transparent;
+            max-width: 94%;
+            margin: 0 auto;
+        }
+
+        
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1366px)  { 
+    body{
+        .general-container{
+            background-color: transparent;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        
+    }
+}
+
+@media (min-width: 1367px) { 
+    body{
+        .general-container{
+            background-color: transparent;
+            max-width:1367px ;
+            
+            margin: 0 auto;
+        }
+
+        
+    }
+}

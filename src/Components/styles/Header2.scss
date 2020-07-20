@@ -1,0 +1,42 @@
+@import "./utilities.scss";
+
+
+.owl-dots{
+    text-align: center;
+    div.active{
+        background-color: gray !important;
+    }
+}
+
+.owl-dot{
+    height: 10px !important;
+    width: 10px !important;
+    background-color: darkgray !important;
+    color: grey ;
+    display: inline-block !important;
+    border-radius: 50% !important;
+    margin: 0 5px;
+}
+
+.Header2-2{
+    padding: 24px 0;
+    .general-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        
+    }
+}    
+
+
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+    img{
+        max-width: 100% !important;
+        width: auto !important;
+    }
+}
